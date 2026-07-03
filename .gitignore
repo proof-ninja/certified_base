@@ -1,0 +1,7 @@
+_build/
+.lia.cache
+*.vo
+*.vo[sk]
+*.glob
+.*.aux
+_opam

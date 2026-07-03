@@ -1,0 +1,14 @@
+(coq.extraction
+ (prelude OCamlExtraction)
+ (theories Base)
+ (extracted_modules
+  Fn Unit Result))
+
+; Packages the OCaml sources extracted above (in this same directory) as a
+; normal, installable OCaml library.
+(library
+ (name certified_base)
+ (package certified_base)
+ (wrapped false)
+ (libraries coq-core.kernel)
+ (flags (:standard -w -a)))
