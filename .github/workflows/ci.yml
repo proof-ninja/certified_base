@@ -11,12 +11,18 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Retrieve opam cache
+        uses: actions/cache@v4
+        with:
+          path: _opam
+          key: ${{ runner.os }}-${{ hashFiles('certified_base.opam.locked') }}
+
       - uses: ocaml/setup-ocaml@v3
         with:
           ocaml-compiler: "4.14"
           dune-cache: true
 
-      - run: opam install . --deps-only --with-test
+      - run: opam install . --deps-only --with-test --locked
         shell: bash
 
       - name: Build (dune build)
