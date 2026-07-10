@@ -1,6 +1,5 @@
-(lang dune 3.11)
-(using coq 0.3)
-(warnings (deprecated_coq_lang_lt_08 disabled))
+(lang dune 3.23)
+(using rocq 0.13)
 (name certified_base)
 (generate_opam_files true)
 

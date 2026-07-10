@@ -1,4 +1,5 @@
-(coq.theory
+(rocq.theory
  (name Base)
  (modules :standard)
+ (theories Stdlib)
  (flags -w -notation-overridden))

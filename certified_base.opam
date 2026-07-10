@@ -4,7 +4,7 @@ synopsis:
   "Rocq-proved, OCaml-extracted reimplementation of Jane Street's Base library"
 license: "MIT"
 depends: [
-  "dune" {>= "3.11"}
+  "dune" {>= "3.23"}
   "ocaml"
   "rocq-prover" {>= "9.0.0"}
   "base" {with-test}
@@ -24,3 +24,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+x-maintenance-intent: ["(latest)"]
