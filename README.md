@@ -1,5 +1,7 @@
 # certified_base
 
+[![CI](https://github.com/proof-ninja/certified_base/actions/workflows/ci.yml/badge.svg)](https://github.com/proof-ninja/certified_base/actions/workflows/ci.yml)
+
 A project aiming to define and prove, in [Rocq](https://rocq-prover.org/) (formerly Coq),
 functionality equivalent to Jane Street's OCaml library [`base`](https://github.com/janestreet/base),
 and [extract](https://rocq-prover.org/doc/master/refman/addendum/extraction.html) it into a real,
