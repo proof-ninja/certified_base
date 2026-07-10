@@ -5,7 +5,7 @@ From Stdlib Require Import ExtrOcamlNatInt.
 From Stdlib Require Import ExtrOcamlZInt.
 From Stdlib Require Import ExtrOCamlFloats.
 
-From Base Require Import Fn Unit Result.
+From Base Require Import Fn Unit Result Sign.
 
 Extraction Language OCaml.
 
@@ -21,3 +21,4 @@ Extract Inductive comparison => "int" ["0" "-1" "1"].
 Extraction Library Fn.
 Extraction Library Unit.
 Extraction Library Result.
+Extraction Library Sign.

@@ -1,7 +1,12 @@
+Require Import List.
+Import ListNotations.
+
 Definition t : Type := unit.
 
 Definition equal (_ _ : t) : bool := true.
 Definition compare (_ _ : t) : comparison := Eq.
+
+Definition all := [tt].
 
 Lemma all_equal : forall x y : t, x = y.
 Proof. intros [] []; reflexivity. Qed.
