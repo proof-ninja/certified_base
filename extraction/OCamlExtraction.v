@@ -5,7 +5,7 @@ From Stdlib Require Import ExtrOcamlNatInt.
 From Stdlib Require Import ExtrOcamlZInt.
 From Stdlib Require Import ExtrOCamlFloats.
 
-From Base Require Import Fn Unit Result Sign.
+From Base Require Import Fn Unit Result Sign Option List.
 
 Extraction Language OCaml.
 
@@ -22,3 +22,5 @@ Extraction Library Fn.
 Extraction Library Unit.
 Extraction Library Result.
 Extraction Library Sign.
+Extraction Library Option.
+Extraction Library List.

@@ -5,7 +5,9 @@
   Fn.ml Fn.mli
   Unit.ml Unit.mli
   Result.ml Result.mli
-  Sign.ml Sign.mli))
+  Sign.ml Sign.mli
+  Option.ml Option.mli
+  List.ml List.mli))
 
 ; Packages the OCaml sources extracted above (in this same directory) as a
 ; normal, installable OCaml library.

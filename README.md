@@ -18,6 +18,8 @@ usable OCaml library.
 | `Unit`   | ✅ | ✅ | Fully proved |
 | `Result` | ✅ | ✅ | Fully proved (including Functor/Monad laws) |
 | `Sign`   | ✅ | ✅ | Fully proved |
+| `Option` | ✅ | ✅ | Fully proved (including Functor/Monad laws) |
+| `List`   | ✅ | ✅ | Fully proved (including Functor/Monad laws) |
 | `Nativeint` | ✅ (partial) | ❌ | Stub with `t`/`zero`/`compare` left as `Parameter`s (unimplemented axioms). Not extracted yet |
 
 No `Admitted` is used anywhere. Anything not (yet) proved is stated explicitly as a `Parameter` (axiom).
