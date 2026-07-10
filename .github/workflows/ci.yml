@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: ocaml/setup-ocaml@v3
+        with:
+          ocaml-compiler: "4.14"
+          dune-cache: true
+
+      - run: opam install . --deps-only --with-test
+        shell: bash
+
+      - name: Build (dune build)
+        run: opam exec -- dune build
+        shell: bash
+
+      - name: Test (dune test)
+        run: opam exec -- dune test
+        shell: bash
