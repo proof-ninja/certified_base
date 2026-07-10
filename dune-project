@@ -7,6 +7,7 @@
 (package
  (name certified_base)
  (synopsis "Rocq-proved, OCaml-extracted reimplementation of Jane Street's Base library")
+ (license MIT)
  (depends
   ocaml
   (rocq-prover (>= "9.0.0"))
